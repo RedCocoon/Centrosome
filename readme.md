@@ -1,3 +1,7 @@
+**Download**
+
+[Download the Newest Version Here!](https://github.com/RedCocoon/Centrosome/releases)
+
 Although I wanted to make a "read me" file with all the warnings like "DO NOT STEAL" but this is an open source project :P
 
 **What is this?**
