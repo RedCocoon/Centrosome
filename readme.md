@@ -1,8 +1,8 @@
 **Download**
 
-[Download the Newest Version Here!](https://github.com/RedCocoon/Centrosome/releases)
+It's recommended to download from releases for the compiled version. If you would like the source code, click [Here](https://github.com/RedCocoon/Centrosome).
 
-Although I wanted to make a "read me" file with all the warnings like "DO NOT STEAL" but this is an open source project :P
+[Download the Newest Version Here!](https://github.com/RedCocoon/Centrosome/releases)
 
 **What is this?**
 
