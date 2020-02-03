@@ -27,6 +27,7 @@ For Linux:
 1) Make a folder that have all the datapacks inside, unzipped, just like how you do when you put the packs in your world.
 2) Make sure that only datapacks are in that folder and there's no folder named "temp".
 3) Open command line.
-4) Type "centrosome" and enter.
-5) Type in the mode for selective merging.
-6) Everything else should happen automatically. Go grab a coffee or something.
+4) Navigate to the folder with the datapacks.
+5) Type "centrosome" and enter.
+6) Type in the mode for selective merging.
+7) Everything else should happen automatically. Go grab a coffee or something.
