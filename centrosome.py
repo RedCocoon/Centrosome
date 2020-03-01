@@ -12,24 +12,27 @@ import tag_merger
 
 import shutil
 from datapack_merger import *
+from pathlib import Path
 
 print(">>> All merging completed. Copying files. <<<")
 
-## Due to how getRelevantPacks(directory) works,
-## by setting the directory to ".." and run processFiles(),
-## it will loop through every single file in all the datapacks
-## and copy those not already in temp folder
+
+## Copying files...
 
 directory = ".."
 
 Packs = getRelevantPacks(directory)
 
-def CopyFiles(ChildPath, MotherPath):
-    return(loadJson(MotherPath))
-
-processFiles(Packs, directory, CopyFiles, ".json", False)
-processFiles(Packs, directory, CopyFiles, ".mcfunction", False)
-
+for i in Packs:
+    Files = glob.glob(i+"/*.*") + glob.glob(i+"/**/*.*",recursive=True)
+    for currentPath in Files:
+        tempPath = currentPath.replace(i,"temp/centrosome/data")
+        if not Path(tempPath).is_file():
+            ensure_dir(tempPath)
+            shutil.copyfile(currentPath, tempPath)
+        
+    
+    
 print(">>> All merges completed. Generating necessary files. <<<")
 
 ## Simple stuffs, just getting all the pack names and put them in pack.mcmeta
@@ -49,5 +52,8 @@ with open(Directory+"pack.mcmeta", "w+") as file:
 shutil.make_archive("centrosome","zip",Directory)
 print(">>>>> Datapacks Merged & Packed <<<<<")
 
+#shutil.rmtree('temp', ignore_errors=True)
+
+print(">>>>>> Deleted Temp Folders <<<<<<")
 input("Press Enter to Close Terminal.")
 exit(0)

@@ -75,15 +75,14 @@ def processFiles(Packs, Target, Process, FileType=".json", DoOutput=True):
         ## Compare every Child Path with every Mother Path and check if matched
         if Child != Mother:
             for CurrentChild in ChildPaths:
-                merged = False
-                
+                merged = False 
                 for CurrentTemp in TempPaths:
                     if CurrentTemp != CurrentChild:
                         ## Generify the path to test if they're the same
                         CurrentChildPath = CurrentChild.replace(Child, Directory+Target)
                         CurrentTempPath = CurrentTemp
-                        
-                        ## If the paths matched, attemp to merge them
+
+                        ## If the paths matched and not on Copy Mode, attemp to merge them
                         if CurrentChildPath == CurrentTempPath and not merged:
                             ## Ignore anything that's not .json
                             if FileType == ".json":
