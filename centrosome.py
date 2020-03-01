@@ -52,7 +52,7 @@ with open(Directory+"pack.mcmeta", "w+") as file:
 shutil.make_archive("centrosome","zip",Directory)
 print(">>>>> Datapacks Merged & Packed <<<<<")
 
-#shutil.rmtree('temp', ignore_errors=True)
+shutil.rmtree('temp', ignore_errors=True)
 
 print(">>>>>> Deleted Temp Folders <<<<<<")
 input("Press Enter to Close Terminal.")
