@@ -11,16 +11,20 @@ Centrosome is an open source tool to assists you in the process of merging multi
 **How do install it?**
 
 For Windows User:
-1) Put the folder "centrosome" into the "C:" Drive.
-2) Add this to your environment variables "Path":
+1) Create a folder named "centrosome" in "C:" Drive.
+2) Put all the files inside the zip into that folder.
+2.1) Note: After you extract it the files will be in a folder, do not copy that folder, just the contents inside.
+3) Add this to your environment variables "Path":
 "C:\centrosome" (not including the quotes)
 
 For Mac:
 1) Please message me if anyone knows how. Discord: Cocoon#5487
 
 For Linux:
-1) Put the folder "centrosome" into /bin/ or /usr/bin
-2) Restart
+1) Create a folder named "centrosome" in /bin/ or /usr/bin
+2) Put all the files inside the zip into that folder.
+2.1) Note: After you extract it the files will be in a folder, do not copy that folder, just the contents inside.
+3) Restart
 
 **How to use:**
 
