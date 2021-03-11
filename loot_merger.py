@@ -24,9 +24,8 @@ def MergeTables(ChildPath, MotherPath):
     try:
         NewJson = MotherJson
         for i in ChildJson["pools"]:
-            for j in MotherJson["pools"]:
-                if i != j:
-                    NewJson.update(i)
+            if i not in MotherJson["pools"]:
+                NewJson["pools"].append(i)
         MergedFile = NewJson
         print("Merged:",ChildPath,"\n With: ",MotherPath)
     except:

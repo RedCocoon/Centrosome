@@ -28,6 +28,10 @@ SelectiveMerger("advancements")
 SelectiveMerger("predicates")
 SelectiveMerger("functions")
 SelectiveMerger("structures")
+SelectiveMerger("worldgen")
+SelectiveMerger("dimension")
+SelectiveMerger("dimension_type")
+SelectiveMerger("item_modifiers")
 
 print("==============All selective merging completed==============")
 
